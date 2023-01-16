@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FizzBuzz</title>
 </head>
 <body>
-    
+  
+     <header class="container-fluid text-center text-white  p-2 weather-header">
+    <h1>Fizz Buzz</h1>
+  </header>
+
+<div class="container">
+      <div class="row">
+        <aside class="col-lg-3 py-3">
+          <h4>Game Information</h4>
+          <p> Fizz Buzz is a group math game for children to teach them about division
+            Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", 
+            and any number divisible by five with the word "buzz".
+
+            <h5> Normal Play</h5>
+            <p>Players generally sit in a circle. The player designated to go first says the number "1", and the players then count upwards in turn.
+             However, any number divisible by three is replaced by the word fizz and any number divisible by five by the word buzz. 
+             Numbers divisible by both three and five (i.e. divisible by 15) become fizz buzz. A player who hesitates or makes a mistake is eliminated.
+            </p>
+
+
+             <h5> This Version </h5>
+                <p>
+                There is a standalone version played by oneself. There is a input box where you
+                 type a number and see what you get  as an answer.   
+                 </p>
+        </aside>
+
+<section id="fizzbuzz-info" class="col-lg-9">
+          <div class="jumbotron  text-light" id="fizzbuzz-info">
+            <h1 class="display-5 mb-4 "><span id="fizzbuzz-name"></span>Fizz Buzz</h1>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Enter Positive Number" id="number" />
+            <button class="btn btn-primary btn-block my-3" id="search-button" type="submit">Search
+              <i class="fas fa-search"></i>
+            </button>
+            </form>
+            </div>
+
+            <div class="card mt-5" id="recent-searches">
+              <div class="card-header">
+                Recent Number Searched
+              </div>
+              <ul class="list-group list-group-flush" id="recent-searches-list">
+               </ul> 
+               </div>
+
+
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
